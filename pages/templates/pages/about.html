@@ -43,103 +43,135 @@
       </div>
     </header>
 
-    <section class="timeline-info">
-      <h2>This Is Us</h2>
-    </section>
-
-    <section id="timeline">
-      <div class="item">
-        <div
-          class="tl-bg"
-          style="
-            background-image: url(https://res.cloudinary.com/matgus/image/upload/v1706264407/static/wood.f88bec41eebe.jpg);
-          "
-        ></div>
-
-        <div class="year">
-          <p>1995</p>
-        </div>
-
-        <div class="tm-text">
-          <h1>THIS IS US</h1>
-          <p>
-            The resturant was built in 1989 and started as an art gallery.
-            Today, 34 years later we are here, NORTH CORNER. We are the only
-            ones to work with arctic natural food of first class, directly from
-            northen Sweden.
-          </p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div
-          class="tl-bg"
-          style="
-            background-image: url(https://res.cloudinary.com/matgus/image/upload/v1706185621/static/waterfall.922ab1b33daa.jpg);
-          "
-        ></div>
-
-        <div class="year">
-          <p>1997</p>
-        </div>
-
-        <div class="tm-text">
-          <h1>THE RED THREAD</h1>
-          <p>
-            We get a building permit and starts to redo the art gallery into a
-            resturant. Our focus from the beginning was the theme, ice and snow.
-            And to take care of the unique environment found here in Kiruna.
-          </p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div
-          class="tl-bg"
-          style="
-            background-image: url(https://res.cloudinary.com/matgus/image/upload/v1706186986/static/three.2ea4124b6ffb.jpg);
-          "
-        ></div>
-
-        <div class="year">
-          <p>2000</p>
-        </div>
-
-        <div class="tm-text">
-          <h1>THE GRAND OPENING AND THE NATURE IN MIND</h1>
-          <p>
-            In 2000 we opened with flying colours. Ice and snow were everywhere
-            to be found and it was a success. We are passionate about creating
-            life-enriching experiences and we live with nature in everything we
-            do. All the food is organic and grown with love from our nearby
-            farms and fields.
-          </p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div
-          class="tl-bg"
-          style="
-            background-image: url(https://res.cloudinary.com/matgus/image/upload/v1706264405/static/snow2..e01cf625644f.jpg);
-          "
-        ></div>
-
-        <div class="year">
-          <p>TODAY</p>
-        </div>
-
-        <div class="tm-text">
-          <h1>ICE ART AND AN ATTRACTION IN SWEDEN – ALL YEAR ROUND</h1>
-          <p>
-            Art is present everywhere in the resturant. At North Corner you
-            enjoy local delicacies, the silence and If you're lucky, you'll see
-            the northern lights dancing in the sky during the dark months. We
-            are fortunate to be able to do this 365 days a year. We focus on two
-            things: A climate-smart restaurant that gives you as a customer
-            delicacies from northern Sweden. And that thing that makes us
-            unique, snow and ice.
-          </p>
+    <section>
+      <h2 class="timeline-info">This Is Our Story</h2>
+      <div class="container">
+        <div class="timeline clearfix">
+          <div class="vertical-line">
+            <div id="post-1" class="col timeline-post">
+              <div class="vesti-content-wrapper">
+                <div class="photo">
+                  <img
+                    class="time-line-img"
+                    src="{% static 'waterfall.jpg' %}"
+                    alt="waterfall"
+                  />
+                  <div class="date-wrapper">
+                    <div class="date">
+                      <span class="day">1995</span>
+                      <br />
+                      <span class="year"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  <a class="desc-a" href="#">
+                    <h4>THIS IS US</h4>
+                  </a>
+                  <p>
+                    The resturant was built in 1989 and started as an art
+                    gallery. Today, 34 years later we are here, North Corner. We
+                    are the only ones to work with arctic natural food of first
+                    class, directly from the Northen Sweden.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="post-2" class="col timeline-post">
+              <div class="content-wrapper">
+                <div class="photo">
+                  <img
+                    class="time-line-img"
+                    src="{% static 'wood.jpg' %}"
+                    alt="wood"
+                  />
+                  <div class="date-wrapper">
+                    <div class="date">
+                      <span class="day">1997</span>
+                      <br />
+                      <span class="year"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  <a class="desc-a" href="#">
+                    <h4>THE RED THREAD</h4>
+                  </a>
+                  <p>
+                    We get a building permit and starts to redo the art gallery
+                    into a resturant. Our focus from the beginning was the
+                    theme, ice and snow. And to take care of the unique
+                    environment found here in Kiruna.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="post-3" class="col timeline-post">
+              <div class="content-wrapper">
+                <div class="photo">
+                  <img
+                    class="time-line-img"
+                    src="{% static 'ice.jpg' %}"
+                    alt="ice"
+                  />
+                  <div class="date-wrapper">
+                    <div class="date">
+                      <span class="day">2000</span>
+                      <br />
+                      <span class="year"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  <a class="desc-a" href="#">
+                    <h4>THE GRAND OPENING AND THE NATURE IN MIND</h4>
+                  </a>
+                  <p>
+                    In 2000 we opened with flying colours. Ice and snow were
+                    everywhere to be found and it was a success. We are
+                    passionate about creating life-enriching experiences and we
+                    live with nature in everything we do. All the food is
+                    organic and grown with love from our nearby farms and
+                    fields.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="post-4" class="col timeline-post">
+              <div class="content-wrapper">
+                <div class="photo">
+                  <img
+                    class="time-line-img"
+                    src="{% static 'flower.jpg' %}"
+                    alt="flower"
+                  />
+                  <div class="date-wrapper">
+                    <div class="date">
+                      <span class="day">2012-</span>
+                      <br />
+                      <span class="year">TODAY</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desc">
+                  <a class="desc-a" href="#">
+                    <h4>
+                      ICE ART AND AN ATTRACTION IN SWEDEN – ALL YEAR ROUND
+                    </h4>
+                  </a>
+                  <p>
+                    Art is present everywhere in the resturant. At North Corner
+                    you enjoy local delicacies, the silence and If you're lucky,
+                    you'll see the northern lights dancing in the sky during the
+                    dark months. We are fortunate to be able to do this 365 days
+                    a year. We focus on two things: A climate-smart restaurant
+                    that gives you as a customer delicacies from northern
+                    Sweden. And that thing that makes us unique, snow and ice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

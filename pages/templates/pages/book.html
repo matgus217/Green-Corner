@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Locally grown food Gothenburg" />
+    <meta name="keywords" content="Locally grown food Gotehburg" />
+
+    <script
+      src="https://kit.fontawesome.com/032f9bfe1a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>North Corner</title>
+  </head>
+
+  <body>
+    <header class="menu">
+      <a href="index.html">
+        <h1 class="logo" aria-label="Logo leading home">
+          North <span>Corner</span>
+        </h1>
+      </a>
+      <!--navbar starts-->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Menu
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="book.html">Book A Table</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container-fluid" id="book-bg">
+        <div class="main-wrap">
+        <div class="cover_ 1 cover_sm">
+          <div class="container-booking">
+            <div class="book">
+              <div class="col-md-7">
+                <h2 class="reservation-heading">Book Your Table Here!</h2>
+                <div id="book-table">
+                  <p>
+                    Larger groups of more than 10 people are welcome to contact
+                    us by phone
+                  </p>
+                  <div id="book-table">
+                    <form method="POST" action="" enctype="multipart/form-data" id="book-form">
+                        {% csrf_token %}
+                        <table>
+                            {{ form }} {% if messages %} {% for message in messages %}
+                            <script>
+                                alert("{{ message }}");
+                            </script>
+                            {% endfor %} {% endif %}
+                        </table>
+                        <table>
+                            <input type="submit" class="reserve-button" value="Book table!" />
+                        </table>
+                    </form>
+                </div>
+              </div>
+            </div>
+            <p id="book">
+              When You have booked the table, Please do not update the website
+              before a confirmation message pops up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="box2">
+          <h3>QUICK LINKS</h3>
+          <a href="index.html"><i class="fas fa-arrow-right"></i>Home</a>
+          <a href="menu.html"><i class="fas fa-arrow-right"></i>Menu</a>
+          <a href="about.html"><i class="fas fa-arrow-right"></i>About Us</a>
+          <a href="book.html"><i class="fas fa-arrow-right"></i>Book A Table</a>
+        </div>
+
+        <div class="box2">
+          <h3>CONTACT US</h3>
+          <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+          <a href="#"><i class="fas fa-envelope"></i> north.corner@gmail.com</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> Reenstiernagatan 8-10, Kiruna,
+            Sweden</a
+          >
+          <a
+            href="https://www.google.com/maps/place/Kiruna/@67.8614204,20.216371,17z/data=!4m6!3m5!1s0x45d08e2ae4257c2b:0x4034506de8c8660!8m2!3d67.8557995!4d20.225282!16zL20vMHp2MnY?entry=ttu"
+            ><i class="fa-solid fa-map-pin"></i>Map</a
+          >
+        </div>
+
+        <div class="box2">
+          <h3>FOLLOW US</h3>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Facebook page (opens in new tab)"
+            ><i class="fa-brands fa-facebook"></i>Facebook</a
+          >
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Visit our Instagram page (opens in new tab)"
+            ><i class="fa-brands fa-instagram"></i>Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
