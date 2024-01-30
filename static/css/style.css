@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-
+/* First page */
 .logo {
     color: black;
     font-size: 50px;
@@ -31,10 +31,43 @@ body {
     text-align: cent er;
 }
 
+/* Menu Navbar*/
+
 .navbar {
     overflow: hidden;
     font-family: "Inter", sans-serif;
     border-radius: 10px;
+}
+
+/* slideshow */
+
+.image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+
+
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* Links inside the navbar */
@@ -102,6 +135,8 @@ body {
     border-radius: 10px;
 }
 
+/* first page index.html */
+
 .section-intro {
     background: url("https://res.cloudinary.com/matgus/image/upload/v1706186988/static/ice2.8ae8433893e8.jpg") no-repeat center center/cover;
     height: 820px;
@@ -136,6 +171,89 @@ body {
     font-weight: bolder;
 }
 
+/* banner text over video */
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: black;
+    background: white;
+    border-radius: 10px;
+}
+
+.banner-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.banner-text:hover {
+    background: lightskyblue;
+}
+
+/* Menu in menu.html */
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.options-list {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.heading:hover {
+    color: lightskyblue;
+}
+
+.menu2 .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu2 .box-container .box {
+    flex: 1 1 42rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+}
+
+.menu2 .box-container .box:hover {
+    color: lightskyblue;
+}
+
+.menu2 .box-container .box .content h3 {
+    font-size: 2.2rem;
+    color: black;
+    line-height: 1.8;
+}
+
+.menu2 .box-container .box .content p {
+    font-size: 1.6rem;
+    color: black;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.menu2 .box-container .box .content span {
+    font-size: 2rem;
+    color: black;
+    line-height: 1.8;
+}
+
+
+/* TimeLine */
+
 
 
 /* Footer */
@@ -158,6 +276,7 @@ body {
     font-size: 1.5rem;
     padding: 1rem 0;
     color: black;
+    text-decoration: none;
 }
 
 .footer .footer-container .box2 a i {
