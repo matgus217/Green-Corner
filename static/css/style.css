@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cairo+Play:wght@500;600&family=Caveat:wght@600&family=Chilanka&family=Fira+Sans:wght@300&family=Inter:wght@100&family=Noto+Sans:wght@300&family=Nova+Square&family=Playpen+Sans:wght@500&family=Poppins:ital,wght@1,300&family=Titillium+Web:wght@300&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+
+.logo {
+    color: black;
+    font-size: 50px;
+}
+
+.logo span {
+    color: lightskyblue;
+}
+
+.menu {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration-color: transparent;
+    text-align: cent er;
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    border-radius: 10px;
+}
+
+/* Add a green background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10px;
+}
+
+.section-intro {
+    background: url("https://res.cloudinary.com/matgus/image/upload/v1706186988/static/ice2.8ae8433893e8.jpg") no-repeat center center/cover;
+    height: 820px;
+    background-size: cover;
+    position: relative;
+}
+
+.section-intro h2 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro p {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    background: white;
+    border-radius: 10px;
+}
+
+.about-section h3 {
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-section p {
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+/* Footer */
+
+.footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+.footer .footer-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: black;
+}
+
+.footer .footer-container .box2 a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: black;
+}
+
+.footer .footer-container .box2 a i {
+    padding-right: 0.5rem;
+}
+
+.footer .footer-container .box2 a:hover i {
+    padding-right: 2rem;
+}
