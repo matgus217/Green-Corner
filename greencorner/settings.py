@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-matgus217-green-corner-tz8i2maemj.us2.codeanyapp.com',
-                 'greencorner-f66e9d809546.herokuapp.com', 'greencorner.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['greencorner.herokuapp.com', 'localhost', '8000-matgus217-green-corner-tz8i2maemj.us2.codeanyapp.com',
+                 'greencorner-f66e9d809546.herokuapp.com']
 
 
 # Application definition
