@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Locally grown food Gothenburg" />
+    <meta name="keywords" content="Locally grown food Gotehburg" />
+
+    <script
+      src="https://kit.fontawesome.com/032f9bfe1a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>North Corner</title>
+  </head>
+
+  <body>
+    <header class="menu">
+      <a href="index.html">
+        <h1 class="logo" aria-label="Logo leading home">
+          North <span>Corner</span>
+        </h1>
+      </a>
+      <!--navbar starts-->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Menu
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="book.html">Book A Table</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
