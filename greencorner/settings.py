@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['greencorner.herokuapp.com', 'localhost', '8000-matgus217-green-corner-tz8i2maemj.us2.codeanyapp.com',
                  'greencorner-f66e9d809546.herokuapp.com']
