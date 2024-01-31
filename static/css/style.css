@@ -173,6 +173,11 @@ img {
 
 /* banner text over video */
 
+.video-intro {
+    background: url("https: //res.cloudinary.com/matgus/video/upload/v1706701922/static/hamn.1d45bf9c7046.mp4")
+}
+
+
 .banner-text {
     position: absolute;
     top: 50%;
