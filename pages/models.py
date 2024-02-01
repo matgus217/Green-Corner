@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.core.validators import MinValueValidator, MaxValueValidator
 from datetime import datetime
-
+from django.forms import ValidationError
+from django.http import HttpResponseRedirect
 
 sittingTimes = (
     ("3-5", "3pm-5pm"),
@@ -31,3 +32,9 @@ class Reservation(models.Model):
 
     def __str__(self):
         return self.name
+
+        class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=['table', 'date', 'time'], name='unique_table_date_time')
+        ]
