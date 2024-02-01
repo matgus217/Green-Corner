@@ -39,36 +39,7 @@ body {
     border-radius: 10px;
 }
 
-/* slideshow */
 
-.image-slideshow {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-
-}
-
-img {
-    width: 100%;
-    border-radius: 10px;
-
-
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 4s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .5
-    }
-
-    to {
-        opacity: 1
-    }
-}
 
 /* Links inside the navbar */
 .navbar a {
@@ -169,6 +140,10 @@ img {
     font-size: 30px;
     text-align: center;
     font-weight: bolder;
+}
+
+.sec-intro {
+    background: url("https://res.cloudinary.com/matgus/image/upload/v1706701919/static/food2.86092b43e84f.jpg")no-repeat center center/cover;
 }
 
 /* banner text over video */
