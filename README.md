@@ -93,6 +93,7 @@ __Booking not available__
 __Admin page__
 
 - The website has an admin-page where the admin can see the all the information of the bookings being made.
+- Login to Admin page - Username: admin Password: helvete123
 
 ![Adminpage](https://github.com/matgus217/Green-Corner/assets/147818054/22385faa-8e3c-42c7-ba2a-343e24021987)
 
